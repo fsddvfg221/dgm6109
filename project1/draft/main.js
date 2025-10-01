@@ -45,27 +45,27 @@ let body3 = drawing.append('ellipse')
 /* body4: dip */
 let body4 = drawing.append('ellipse')
   .attr('cx', 285).attr('cy', 150).attr('rx', 50).attr('ry', 50)
-  .attr('fill', 'mediumseagreen');
+  .attr('fill', 'seagreen');
 
 /* body5: highest & prominent */
 let body5 = drawing.append('ellipse')
   .attr('cx', 335).attr('cy', 85).attr('rx', 60).attr('ry', 60)
-  .attr('fill', 'forestgreen');
+  .attr('fill', 'lightgreen');
 
 /* body6: mid-high */
 let body6 = drawing.append('ellipse')
   .attr('cx', 385).attr('cy', 125).attr('rx', 50).attr('ry', 50)
-  .attr('fill', 'lightgreen');
+  .attr('fill', 'seagreen');
 
 /* body7: clear dip */
 let body7 = drawing.append('ellipse')
   .attr('cx', 430).attr('cy', 165).attr('rx', 45).attr('ry', 45)
-  .attr('fill', 'seagreen');
+  .attr('fill', 'lightgreen');
 
 /* body8: rise toward tail */
 let body8 = drawing.append('ellipse')
   .attr('cx', 455).attr('cy', 130).attr('rx', 30).attr('ry', 30)
-  .attr('fill', 'mediumseagreen');
+  .attr('fill', 'seagreen');
 
 /* body9: small transition */
 let body9 = drawing.append('ellipse')
@@ -75,7 +75,7 @@ let body9 = drawing.append('ellipse')
 /* body10: tail tip (smallest; rightmost within 500 limit) */
 let body10Tail = drawing.append('ellipse')
   .attr('cx', 488).attr('cy', 118).attr('rx', 12).attr('ry', 12) // 488 + 12 = 500
-  .attr('fill', 'forestgreen');
+  .attr('fill', 'seagreen');
 
 /* ---------- FACE (2 eyes) ---------- */
 let eyeLeft = drawing.append('ellipse')
