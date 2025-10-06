@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Project 2-5 Gift Card Purchasing System (Draft)</title>
+  <script src="script.js" defer></script>
+  <style>
+    body { font-family: Arial, sans-serif; padding: 20px; }
+    label { display: block; margin-top: 12px; }
+    select, input { width: 220px; padding: 5px; margin-top: 5px; }
+    button { margin-top: 16px; padding: 8px 14px; }
+    #output { margin-top: 20px; font-weight: bold; color: #0a3d91; }
+  </style>
+</head>
+<body>
+  <h1>Gift Card Purchasing Form</h1>
+
+  <form id="giftCardForm">
+    <label>What store do you want to buy a gift card for?</label>
+    <select id="store">
+      <option value="">--Select--</option>
+      <option value="Sepharoah">Sepharoah</option>
+      <option value="Wallgrinds">Wallgrinds</option>
+      <option value="Taco Hut">Taco Hut</option>
+    </select>
+
+    <label>How much do you want to put on the gift card?</label>
+    <input id="amount" type="text" placeholder="e.g. 25 or 50.00" />
+
+    <label>Please enter your ZIP code:</label>
+    <input id="zip" type="text" placeholder="5-digit ZIP" />
+
+    <button type="button" onclick="validateData()">Submit</button>
+  </form>
+
+  <p id="output"></p>
+</body>
+</html>
