@@ -1,0 +1,67 @@
+/*
+  Author: Rick Li
+  Course: Snippet 02
+  Date: October 2025
+  Description: Styling file for Breaking Bad example
+  References:
+    Font-family setup from W3Schools (https://www.w3schools.com/css/css_font.asp)
+    Hover/focus syntax from MDN Web Docs (https://developer.mozilla.org/en-US/docs/Web/CSS/:hover)
+*/
+
+/* 1️⃣ Change default font */
+body {
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  background-color: #f7f7f7;
+  color: #222;
+  line-height: 1.6;
+  margin: 40px;
+}
+
+/* 2️⃣ Add space between elements */
+h1, h2, h3, h4, p, a, figure {
+  margin-bottom: 20px;
+}
+
+/* 3️⃣ In-text link hover & focus styles */
+a {
+  color: #0066cc;
+  text-decoration: none;
+  transition: color 0.3s ease, background-color 0.3s ease;
+}
+
+a:hover,
+a:focus {
+  color: #ff6600;
+  background-color: rgba(255, 165, 0, 0.1);
+}
+
+/* 4️⃣ Image inside a link: hover & focus */
+a img {
+  width: 100%;
+  max-width: 570px;
+  border-radius: 10px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+a img:hover,
+a img:focus {
+  transform: scale(1.03);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+/* 5️⃣ Paragraph width responsive */
+p {
+  max-width: 600px;
+  width: 90%;
+}
+
+/* 6️⃣ Figure caption styling */
+figure {
+  max-width: 600px;
+}
+
+figcaption {
+  font-size: 0.9em;
+  color: #555;
+  margin-top: 8px;
+}
