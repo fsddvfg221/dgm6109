@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Hao Li Lab #5 Fall 2025</title>
+
+  <!-- load libraries -->
+  <script src="libraries/d3.min.js"></script>
+  <script src="libraries/polygon.js"></script>
+
+  <!-- load drawings (your and classmates') -->
+  <script src="elements/caterpillar.js"></script>
+  <script src="elements/butterfly.js"></script>
+  <script src="elements/drummer.js"></script>
+  <script src="elements/ladybug.js"></script>
+
+  <style>
+    body {
+      font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial;
+      background: #fdfdfd;
+      padding: 20px 40px;
+    }
+    label {
+      display: inline-block;
+      width: 180px;
+      margin: 8px 0;
+    }
+    input, select, button {
+      padding: 6px;
+      font-size: 14px;
+    }
+    button {
+      margin-top: 10px;
+      cursor: pointer;
+    }
+    #canvas svg {
+      margin-top: 20px;
+      border: 1px solid #aaa;
+      background: white;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>Lab 5 — Hao Li Collaboration Project</h1>
+
+  <!-- First drawing -->
+  <p>
+    <label for="choice1">Select first element:</label>
+    <select id="choice1">
+      <option value="caterpillar">Caterpillar (Hao Li)</option>
+      <option value="butterfly">Butterfly</option>
+      <option value="drummer">Drummer</option>
+      <option value="ladybug">Ladybug</option>
+    </select>
+  </p>
+  <p>
+    <label for="x1">Position first element (x,y):</label>
+    x:<input type="number" id="x1" value="150" style="width:80px">
+    y:<input type="number" id="y1" value="220" style="width:80px">
+  </p>
+
+  <!-- Second drawing -->
+  <p>
+    <label for="choice2">Select second element:</label>
+    <select id="choice2">
+      <option value="caterpillar">Caterpillar (Hao Li)</option>
+      <option value="butterfly" selected>Butterfly</option>
+      <option value="drummer">Drummer</option>
+      <option value="ladybug">Ladybug</option>
+    </select>
+  </p>
+  <p>
+    <label for="x2">Position second element (x,y):</label>
+    x:<input type="number" id="x2" value="400" style="width:80px">
+    y:<input type="number" id="y2" value="220" style="width:80px">
+  </p>
+
+  <!-- Show origin -->
+  <p>
+    <label for="origins">Show origin points:</label>
+    <select id="origins">
+      <option value="yes">Yes</option>
+      <option value="no" selected>No</option>
+    </select>
+  </p>
+
+  <button id="action">Draw!</button>
+  <div id="canvas"></div>
+
+  <script src="main.js"></script>
+</body>
+</html>
