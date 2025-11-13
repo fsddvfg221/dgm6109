@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Lab 9 – Rick Li</title>
+</head>
+
+<body style="font-family: Arial, sans-serif; padding: 40px;">
+
+    <div style="max-width: 900px; margin: 0 auto;">
+
+        <!-- MAIN TITLE -->
+        <h1 style="text-align:center; font-size: 32px; margin-bottom: 10px;">
+            Lab #9: My Top Two Scatterplots
+        </h1>
+
+        <!-- NAME -->
+        <p style="font-size: 17px; margin-top: 0; text-align:center;">
+            <b>Name:</b> Rick Li
+        </p>
+
+        <hr style="margin: 30px 0;">
+
+        <!-- LINKS SECTION -->
+        <h2 style="font-size: 24px;">My Visualizations</h2>
+
+        <p style="font-size: 17px;">
+            Here are the links to the two scatterplots I selected for this assignment:
+        </p>
+
+        <ul style="font-size: 18px; line-height: 1.7;">
+            <li>
+                <a href="./plot1/index.html" style="color:#1a73e8;">
+                    Plot 1: Duration vs. Happiness After
+                </a>
+            </li>
+
+            <li>
+                <a href="./plot2/index.html" style="color:#1a73e8;">
+                    Plot 2: Score vs. Happiness After
+                </a>
+            </li>
+        </ul>
+
+        <hr style="margin: 40px 0;">
+
+        <!-- SORT / FILTER SECTION -->
+        <h2 style="font-size: 24px; margin-bottom: 15px;">
+            How I Applied Array.sort() and Array.filter()
+        </h2>
+
+        <!-- SORT DESCRIPTION -->
+        <h3 style="margin-top: 20px; font-size: 20px;">Array.sort() (Used in Plot 1)</h3>
+
+        <p style="font-size: 16px; line-height: 1.6;">
+            In my first scatterplot, I used <b>Array.sort()</b> to sort the rounds by duration before drawing the circles.
+            Sorting the data ensured that smaller bubbles were placed first and the larger ones were drawn last, preventing
+            them from covering important data points. This made the relationship between duration and happiness much easier
+            to see, especially when several values were close together on the chart.
+        </p>
+
+        <!-- FILTER DESCRIPTION -->
+        <h3 style="margin-top: 25px; font-size: 20px;">Array.filter() (Used in Plot 2)</h3>
+
+        <p style="font-size: 16px; line-height: 1.6;">
+            In my second scatterplot, I applied <b>Array.filter()</b> to highlight a specific subset of my data. I filtered
+            rounds based on play mode (walking vs. cart) so I could examine the difference more clearly. Filtering reduced
+            visual clutter and allowed me to compare score and happiness under different conditions in a more focused way.
+        </p>
+
+        <p style="font-size: 16px; line-height: 1.6;">
+            Together, these techniques helped improve clarity and made both visualizations more effective for exploring
+            the questions I was interested in.
+        </p>
+
+    </div>
+
+</body>
+
+</html>

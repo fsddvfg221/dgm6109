@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Plot 2 – Score vs Happiness After</title>
+    <script src="d3.min.js"></script>
+</head>
+
+<body style="font-family: Arial, sans-serif;">
+
+    <div style="margin: 0 auto; max-width: 900px; padding: 20px;">
+
+        <!-- PLOT TITLE -->
+        <h1 style="text-align:center; font-size: 32px; margin-bottom: 10px;">
+            Plot 2: Score vs. Happiness After
+        </h1>
+
+        <!-- Hypothesis Section -->
+        <p style="text-align:center; font-size: 18px; margin-top: 0;">
+            <b>Hypothesis:</b> As my golf score decreases, my happiness after the round tends to increase.
+            <br>
+            <b>In addition:</b> Play mode (color) and duration (circle size) are included to explore more detailed patterns.
+        </p>
+
+        <!-- SVG Canvas -->
+        <div id="canvas" style="margin-top: 20px;"></div>
+
+        <!-- EXPLANATION BLOCK -->
+        <div style="
+            background-color: #f3f3f3; 
+            padding: 20px; 
+            margin-top: 40px; 
+            border-radius: 8px;
+        ">
+
+            <h2 style="margin-top: 0;">Explanation of Why This Scatterplot Is Among My Best Work</h2>
+
+            <p style="font-size: 16px; line-height: 1.6;">
+                This scatterplot presents three important variables that help analyze my golf performance and overall happiness:
+                score (X-axis), happiness after the round (Y-axis), duration (bubble size), and whether I walked or used a cart
+                (color). This chart directly examines my hypothesis that lower golf scores correlate with higher post-round
+                happiness.
+            </p>
+
+            <p style="font-size: 16px; line-height: 1.6;">
+                By encoding play mode through color and duration through bubble size, the visualization offers deeper insights
+                into additional factors that may influence my performance or mood. For example, we can observe whether walking
+                rounds (one color) tend to cluster around certain score–happiness combinations, or whether longer rounds (larger
+                circles) show consistent patterns.
+            </p>
+
+            <p style="font-size: 16px; line-height: 1.6;">
+                From a technical perspective, this scatterplot uses <b>Array.sort()</b> to manage the placement of circles so
+                smaller bubbles are not hidden behind larger ones, improving clarity. It also uses <b>Array.filter()</b> to
+                explore subsets of the data, such as isolating walking-only or higher-score rounds. These D3 techniques enhance
+                readability and reveal more potential relationships, making this visualization one of my strongest analytical
+                works.
+            </p>
+
+        </div>
+
+    </div>
+
+    <script src="main.js"></script>
+</body>
+
+</html>

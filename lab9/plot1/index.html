@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Plot 1 – Duration vs Happiness After</title>
+    <script src="d3.min.js"></script>
+</head>
+
+<body style="font-family: Arial, sans-serif;">
+
+    <div style="margin: 0 auto; max-width: 900px; padding: 20px;">
+
+        <!-- PLOT TITLE -->
+        <h1 style="text-align:center; font-size: 32px; margin-bottom: 10px;">
+            Plot 1: Duration vs. Happiness After
+        </h1>
+
+        <!-- Hypothesis Section -->
+        <p style="text-align:center; font-size: 18px; margin-top: 0;">
+            <b>Hypothesis:</b> As the duration of my golf rounds increases, my happiness after playing increases.
+            <br>
+            <b>In addition:</b> Weather (color) and score (circle size) are included to explore additional correlations.
+        </p>
+
+        <!-- SVG Canvas -->
+        <div id="canvas" style="margin-top: 20px;"></div>
+
+        <!-- EXPLANATION BLOCK -->
+        <div style="
+            background-color: #f3f3f3; 
+            padding: 20px; 
+            margin-top: 40px; 
+            border-radius: 8px;
+        ">
+
+            <h2 style="margin-top: 0;">Why This Visualization Works</h2>
+
+            <p style="font-size: 16px; line-height: 1.6;">
+                This visualization clearly presents multiple important data properties: duration (X-axis), happiness after
+                playing (Y-axis), weather conditions (color), and score (circle size). It directly tests my hypothesis by
+                examining whether longer rounds tend to result in higher post-round happiness.
+            </p>
+
+            <p style="font-size: 16px; line-height: 1.6;">
+                Including weather as a color attribute and score as bubble size enhances the depth of the analysis. These
+                additional properties help reveal potential secondary relationships. For instance, we can observe whether
+                certain weather types cluster in high-duration, high-happiness regions or whether higher scores are associated
+                with particular patterns in the chart.
+            </p>
+
+            <p style="font-size: 16px; line-height: 1.6;">
+                From a technical standpoint, this visualization also applies <b>Array.sort()</b> to ensure that larger circles
+                are drawn last, preventing them from hiding smaller circles behind them. Additionally, it uses
+                <b>Array.filter()</b> to explore the distribution of longer rounds (over 250 minutes). These techniques improve
+                readability and analytical clarity, making this scatterplot one of my strongest and most effective works.
+            </p>
+
+        </div>
+
+    </div>
+
+    <script src="main.js"></script>
+</body>
+
+</html>
