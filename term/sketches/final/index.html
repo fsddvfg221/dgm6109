@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Rick Li – Phase 3b: Term Project Sketches</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      color: #333;
+      line-height: 1.7;
+      max-width: 900px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+    h1, h2 {
+      color: #003366;
+    }
+    h1 { text-align: center; }
+    a {
+      color: #0046b8;
+      text-decoration: none;
+    }
+    a:hover { text-decoration: underline; }
+    section { margin-bottom: 3em; }
+    ul { margin-top: 0.5em; }
+    footer {
+      border-top: 1px solid #ccc;
+      margin-top: 40px;
+      padding-top: 10px;
+      font-size: 0.95em;
+      color: #555;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>Phase 3b – Term Project Sketches Final</h1>
+  <p><strong>Name:</strong> Rick Li<br>
+  <strong>Link:</strong> <a href="https://fsddvfg221.github.io/dgm6109/term/sketches/final/">https://fsddvfg221.github.io/dgm6109/term/sketches/final/</a></p>
+
+  <!-- About My Data -->
+  <section>
+    <h2>About My Data</h2>
+    <p>
+      For this project, I collected personal golf data between September and November 2025 to explore how 
+      environmental conditions and personal factors affect performance and happiness. Each entry represents 
+      one full round of golf, recorded with variables including date, weather, temperature, start time, 
+      duration, score, and happiness rating after the round.
+    </p>
+  </section>
+
+  <!-- Sketch 1 -->
+  <section>
+    <h2>Sketch 1 – Weather vs Happiness (Scatterplot / Bubble Plot)</h2>
+    <p><strong>Research Question:</strong>
+How does weather condition (rainy, cloudy, sunny) influence my happiness after playing golf?</p>
+
+<p><strong>Hypothesis:</strong>
+As weather improves from rainy to sunny, my happiness after playing increases. Additionally, longer rounds
+may contribute to higher happiness, since extended playtime often occurs during better weather conditions.</p>
+
+    <p><strong>Data Elements:</strong></p>
+    <ul>
+      <li>X-axis: Weather condition (Rainy → Sunny)</li>
+      <li>Y-axis: Happiness After Playing (1–10)</li>
+      <li>Bubble Size: Duration (minutes)</li>
+      <li>Color: Weather Type (blue → yellow gradient)</li>
+    </ul>
+
+    <p><strong>Units & Ranges:</strong></p>
+    <ul>
+      <li>Weather Index: 1–4</li>
+      <li>Happiness After: 4–10 points</li>
+      <li>Duration: 220–310 minutes</li>
+    </ul>
+
+    <p><strong>Representation:</strong><br>
+      Each bubble represents one golf round. The horizontal axis shows weather conditions, 
+      the vertical axis shows happiness after playing, and bubble size represents duration. 
+      Color encodes weather types from blue (rainy) to yellow (sunny). The visualization 
+      reveals that sunnier days generally correspond with higher happiness and longer rounds.
+    </p>
+
+    <p><a href="sketch1.pdf">📄 View Sketch 1 (PDF)</a></p>
+  </section>
+
+  <!-- Sketch 2 -->
+<section>
+  <h2>Sketch 2 – Happiness Rings: Weather, Score, and Happiness (Radial Visualization)</h2>
+
+  <p><strong>Research Question:</strong>
+How do score and weather type distribute across different happiness levels (7–10)?</p>
+
+<p><strong>Hypothesis:</strong>
+As my happiness level increases from 7 to 10, my golf score tends to improve (lower score). Furthermore,
+sunny weather is expected to appear more frequently in the higher-happiness rings, indicating that better
+weather contributes to both improved performance and higher emotional satisfaction.</p>
+
+  <p><strong>Data Elements:</strong></p>
+  <ul>
+    <li>Radial Position: Happiness Level (7–10)</li>
+    <li>Label: Score (87–95 strokes)</li>
+    <li>Color: Weather Type (Sunny, Cloudy, Rainy)</li>
+  </ul>
+
+  <p><strong>Units & Ranges:</strong></p>
+  <ul>
+    <li>Happiness Level: 7–10</li>
+    <li>Score: 87–95 strokes</li>
+    <li>Weather: 3 categories (Sunny / Cloudy / Rainy)</li>
+  </ul>
+
+  <p><strong>Representation:</strong><br>
+    This radial visualization uses concentric rings to represent happiness levels from 7 to 10.
+    Each circle represents one golf round. The number inside each circle indicates the score, and
+    the circle’s color shows the weather type: yellow for sunny, purple-gray for cloudy, and blue
+    for rainy. Rounds with higher happiness appear farther outward on the diagram. This layout
+    makes it easy to compare how score and weather conditions distribute across different happiness
+    bands, highlighting whether good weather and better performance tend to align with higher
+    post-round happiness.
+  </p>
+
+  <p><a href="sketch2.pdf">📄 View Sketch 2 (PDF)</a></p>
+</section>
+
+
+    
+
+
+ <section>
+  <h2>Sketch 3 – Radial Weather & Happiness Change Visualization</h2>
+
+ <p><strong>Research Question:</strong>
+How does weather condition relate to the difference between happiness before and after each round?</p>
+
+<p><strong>Hypothesis:</strong>
+As the difference between happiness after and happiness before increases, emotional improvement becomes
+more pronounced. In addition, sunny weather is likely associated with larger positive happiness changes,
+while cloudy or rainy conditions may lead to smaller or negative shifts.</p>
+
+  <p><strong>Data Elements:</strong></p>
+  <ul>
+    <li>Line Segment Length: Happiness Before vs Happiness After (difference shown by red and green segments)</li>
+    <li>Dot Color: Weather Type (Sunny, Cloudy, Rainy)</li>
+    <li>Radial Angle: Individual Golf Rounds (categorical; one angle per round)</li>
+  </ul>
+
+  <p><strong>Units & Ranges:</strong></p>
+  <ul>
+    <li>Happiness Before: 4–9 (1–10 scale)</li>
+    <li>Happiness After: 7–10 (1–10 scale)</li>
+    <li>Weather Types: Sunny (orange), Cloudy (gray), Rainy (blue)</li>
+    <li>Rounds Represented: 13 total rounds, each placed at a unique radial angle</li>
+  </ul>
+
+  <p><strong>Representation:</strong><br>
+    This radial visualization uses outward spokes surrounding a central golf-ball icon to show changes
+    in happiness before and after each round. Each spoke represents a single golf round. The inner red
+    portion of each line shows the reported <em>happiness before</em> playing, while the outer green portion 
+    shows the <em>happiness after</em> playing. The difference between the two lengths represents the emotional
+    change during the round. The colored circle at each spoke’s endpoint marks the weather condition:
+    orange for sunny, gray for cloudy, and blue for rainy. This layout allows readers to easily compare:
+    the size of happiness increases across rounds, which weather types are associated with larger positive shifts,
+    and whether some conditions lead to smaller or negative changes.</p>
+
+  <p><a href="sketch3.pdf">📄 View Sketch 3 (PDF)</a></p>
+</section>
+
+
+ <section>
+  <h2>Summary</h2>
+  <p>
+    These three visualization proposals explore how weather conditions and emotional changes relate to my
+    golf experience, performance, and overall happiness. Each sketch highlights different dimensions of my 
+    dataset while following the clarity and proportional-encoding principles emphasized in class.
+  </p>
+
+  <p>
+    Sketch 1 uses a weather-to-happiness scatterplot to examine whether sunnier conditions correspond to 
+    higher post-round happiness. Sketch 2 introduces a radial “happiness rings” layout that compares 
+    weather, score, and happiness levels across all rounds, revealing how performance and mood distribute 
+    across different conditions. Sketch 3 expands this perspective by visualizing the change between 
+    happiness before and after each round using a spoke-based radial diagram, allowing clear comparison of 
+    emotional shifts under sunny, cloudy, or rainy weather.
+  </p>
+
+  <p>
+    Together, these proposals present complementary ways of understanding how environmental factors and 
+    personal experience influence my golf performance and emotional outcomes. Each sketch remains visually 
+    consistent, readable, and grounded in the visualization techniques introduced in class.
+  </p>
+</section>
+
+<section>
+  <h2>References</h2>
+  <ul>
+    <li>
+      <strong>Dear Data</strong> – Inspired the hand-drawn, personal storytelling style and encouraged thinking 
+      beyond traditional chart formats when designing Sketch 2 and Sketch 3.
+    </li>
+    <li>
+      <strong>Data to Viz</strong> – Helped guide appropriate chart-type decisions and reinforced clarity in 
+      encoding for Sketch 1 and Sketch 2.
+    </li>
+    <li>
+      <strong>Observable D3 Gallery</strong> – Provided examples of proportional encoding and radial layouts 
+      that informed the structural design of Sketch 3.
+    </li>
+    <li>
+      <strong>Information Is Beautiful Awards</strong> – Influenced color hierarchy, minimal layout choices, 
+      and overall visual clarity across all sketches.
+    </li>
+  </ul>
+</section>
+
+
