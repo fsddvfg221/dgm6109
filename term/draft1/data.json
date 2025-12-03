@@ -1,0 +1,135 @@
+[
+  {
+    "date": "2025-09-14",
+    "course": "University Golf Club",
+    "weather": "Overcast (15 °C)",
+    "happinessBefore": 6,
+    "happinessAfter": 8
+  },
+  {
+    "date": "2025-09-17",
+    "course": "Mayfair Golf Course",
+    "weather": "Cloudy (14 °C)",
+    "happinessBefore": 6,
+    "happinessAfter": 8
+  },
+  {
+    "date": "2025-09-21",
+    "course": "Northview Golf & Country Club",
+    "weather": "Partly Sunny (16 °C)",
+    "happinessBefore": 7,
+    "happinessAfter": 10
+  },
+  {
+    "date": "2025-09-26",
+    "course": "Quilchena Golf Course",
+    "weather": "Light Rain (13 °C)",
+    "happinessBefore": 6,
+    "happinessAfter": 9
+  },
+  {
+    "date": "2025-09-29",
+    "course": "University Golf Club",
+    "weather": "Mostly Cloudy (12 °C)",
+    "happinessBefore": 5,
+    "happinessAfter": 7
+  },
+  {
+    "date": "2025-10-03",
+    "course": "Mayfair Golf Course",
+    "weather": "Drizzle, Cool (12 °C)",
+    "happinessBefore": 5,
+    "happinessAfter": 8
+  },
+  {
+    "date": "2025-10-08",
+    "course": "Northview Golf & Country Club",
+    "weather": "Cloudy (13 °C)",
+    "happinessBefore": 6,
+    "happinessAfter": 8
+  },
+  {
+    "date": "2025-10-11",
+    "course": "Quilchena Golf Course",
+    "weather": "Partly Sunny (15 °C)",
+    "happinessBefore": 7,
+    "happinessAfter": 10
+  },
+  {
+    "date": "2025-10-29",
+    "course": "Quilchena Golf Course",
+    "weather": "Cloudy (15 °C)",
+    "happinessBefore": 6,
+    "happinessAfter": 9
+  },
+  {
+    "date": "2025-11-02",
+    "course": "Langara Golf Course",
+    "weather": "Partly Sunny (18 °C)",
+    "happinessBefore": 4,
+    "happinessAfter": 8
+  },
+  {
+    "date": "2025-11-05",
+    "course": "Quilchena Golf Course",
+    "weather": "Sunny (15 °C)",
+    "happinessBefore": 6,
+    "happinessAfter": 7
+  },
+  {
+    "date": "2025-11-07",
+    "course": "McCleery Golf Course",
+    "weather": "Partly Sunny (17 °C)",
+    "happinessBefore": 7,
+    "happinessAfter": 8
+  },
+  {
+    "date": "2025-11-09",
+    "course": "Northlands Golf Course",
+    "weather": "Light Rain (13 °C)",
+    "happinessBefore": 5,
+    "happinessAfter": 10
+  },
+  {
+    "date": "2025-11-12",
+    "course": "Quilchena Golf Course",
+    "weather": "Light Rain (15 °C)",
+    "happinessBefore": 6,
+    "happinessAfter": 9
+  },
+  {
+    "date": "2025-11-15",
+    "course": "Quilchena Golf Course",
+    "weather": "Partly Sunny (13 °C)",
+    "happinessBefore": 4,
+    "happinessAfter": 10
+  },
+  {
+    "date": "2025-11-16",
+    "course": "Mayfair Golf Course",
+    "weather": "Rainy(13 °C)",
+    "happinessBefore": 6,
+    "happinessAfter": 8
+  },
+  {
+    "date": "2025-11-18",
+    "course": "Quilchena Golf Course",
+    "weather": "Cloudy(16°C)",
+    "happinessBefore": 5,
+    "happinessAfter": 8
+  },
+  {
+    "date": "2025-11-23",
+    "course": "Myfair Golf Course",
+    "weather": "Rainy(10 °C)",
+    "happinessBefore": 6,
+    "happinessAfter": 9
+  },
+  {
+    "date": "2025-12-01",
+    "course": "Quilchena Golf Course",
+    "weather": "Light Rain(12°C)",
+    "happinessBefore": 5,
+    "happinessAfter": 7
+  }
+]
