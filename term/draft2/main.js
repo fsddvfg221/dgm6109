@@ -268,7 +268,7 @@ function buildVisualization(data) {
 
   segmentLegend.append("text")
     .attr("class", "small-note")
-    .attr("x", 0)
+    .attr("x", -10)
     .attr("y", 72)
     .text("Distance from center = Happiness (1–10)");
 }
