@@ -1,0 +1,377 @@
+/* =========================================
+   Square-Tee Golf – Green Theme Stylesheet
+   All comments are now in English
+   ========================================= */
+
+/* Basic Reset */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  line-height: 1.6;
+  color: #1e2a1f;              /* Dark green text */
+  background-color: #f1f7f2;    /* Very light grass green background */
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* =========================================
+   Header Navigation
+   ========================================= */
+
+.logo-img {
+  height: 2.5em;
+  vertical-align: middle;
+}
+
+.site-header {
+  background-color: #0f3b1f;    /* Deep forest green */
+  color: #ffffff;
+  padding: 0.9rem 1.25rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo a {
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 1.1rem;
+  letter-spacing: 0.06em;
+}
+
+.nav-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 1.1rem;
+}
+
+.nav-list a {
+  color: #d7f7da;               /* Light green text */
+  font-size: 0.95rem;
+  padding: 0.25rem 0.6rem;
+  border-radius: 999px;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.nav-list a:hover,
+.nav-list a:focus {
+  background-color: #d7f7da;
+  color: #0f3b1f;
+}
+
+/* =========================================
+   Main Layout
+   ========================================= */
+
+main {
+  padding: 1.5rem 1.25rem 2.5rem;
+}
+
+/* Hero Section (Green Gradient) */
+.hero {
+  background-image:
+    linear-gradient(rgba(15, 59, 31, 0.75), rgba(27, 94, 43, 0.75)), /* green overlay */
+    url("../images/hero.jpg"); /* change to your image name */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  color: #ffffff;
+  padding: 2.5rem 1.8rem;
+  border-radius: 1.2rem;
+  margin-bottom: 2rem;
+}
+
+.hero-text h1 {
+  margin: 0 0 0.8rem;
+  font-size: 2rem;
+}
+
+.hero-text p {
+  margin: 0 0 1.3rem;
+  max-width: 32rem;
+}
+
+/* Call-to-Action Button (Green theme) */
+.btn {
+  display: inline-block;
+  background-color: #8fe292;     /* Soft grass green */
+  color: #0f3b1f;
+  padding: 0.7rem 1.5rem;
+  border-radius: 999px;
+  font-weight: 600;
+  font-size: 0.95rem;
+  transition: transform 0.15s ease, box-shadow 0.15s ease, background-color 0.15s ease;
+}
+
+.btn:hover,
+.btn:focus {
+  background-color: #c9ffd0;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 12px rgba(0,0,0,0.18);
+}
+
+/* =========================================
+   Cards Section (Clubs / Accessories)
+   ========================================= */
+
+.cards-section {
+  margin-bottom: 2.5rem;
+}
+
+.cards-section h2 {
+  margin: 0 0 1rem;
+}
+
+/* Responsive card layout using flex */
+.card-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+/* Card Component */
+.card {
+  background-color: #ffffff;
+  border-radius: 0.7rem;
+  border-left: 6px solid #4caf50;   /* Green accent bar */
+  padding: 1rem;
+  flex: 1 1 220px;                  /* Minimum card width */
+  max-width: 260px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.06);
+  transition: box-shadow 0.2s ease, transform 0.2s ease;
+
+  /* allow background images on cards */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.card h3 {
+  margin-top: 0;
+}
+
+.card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 14px rgba(0,0,0,0.14);
+}
+
+.card-link {
+  display: inline-block;
+  margin-top: 0.4rem;
+  color: #1b5e2b;
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+
+.card-link:hover {
+  text-decoration: underline;
+}
+
+/* =========================================
+   Home Page Card Background Images
+   (Drivers / Irons / Wedges / Putters / Bags / Carts / Tees / Gloves)
+   ========================================= */
+/* TODO: change file names to match your actual images */
+
+.card-drivers {
+  background-image:
+    linear-gradient(rgba(255,255,255,0.55), rgba(255,255,255,0.70)),
+    url("../images/card-drivers.jpg");
+}
+
+.card-irons {
+  background-image:
+    linear-gradient(rgba(255,255,255,0.55), rgba(255,255,255,0.70)),
+    url("../images/card-irons.jpg");
+}
+
+.card-wedges {
+  background-image:
+    linear-gradient(rgba(255,255,255,0.55), rgba(255,255,255,0.70)),
+    url("../images/card-wedges.jpg");
+}
+
+.card-putters {
+  background-image:
+    linear-gradient(rgba(255,255,255,0.55), rgba(255,255,255,0.70)),
+    url("../images/card-putters.jpg");
+}
+
+.card-bags {
+  background-image:
+    linear-gradient(rgba(255,255,255,0.55), rgba(255,255,255,0.70)),
+    url("../images/card-bags.jpg");
+}
+
+.card-carts {
+  background-image:
+    linear-gradient(rgba(255,255,255,0.55), rgba(255,255,255,0.70)),
+    url("../images/card-carts.jpg");
+}
+
+.card-tees {
+  background-image:
+    linear-gradient(rgba(255,255,255,0.55), rgba(255,255,255,0.70)),
+    url("../images/card-tees.jpg");
+}
+
+.card-gloves {
+  background-image:
+    linear-gradient(rgba(255,255,255,0.55), rgba(255,255,255,0.70)),
+    url("../images/card-gloves.jpg");
+}
+
+/* =========================================
+   Inner Pages (drivers, irons, accessories…)
+   ========================================= */
+
+.page .page-header h1 {
+  margin-top: 0;
+  margin-bottom: 0.4rem;
+}
+
+.page .page-header p {
+  margin: 0 0 0.8rem;
+  max-width: 36rem;
+}
+
+/* White content block */
+.content-section {
+  background-color: #ffffff;
+  border-radius: 0.8rem;
+  padding: 1rem 1.1rem;
+  margin-top: 1rem;
+}
+
+/* Specs grid using flex */
+.spec-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.8rem;
+  margin-top: 0.6rem;
+}
+
+.spec-card {
+  background-color: #f4faf5;
+  border-radius: 0.6rem;
+  padding: 0.75rem;
+  flex: 1 1 200px;
+  max-width: 260px;
+}
+
+/* Clubs page: image on top, text below */
+.club-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-top: 0.8rem;
+}
+
+.club-card {
+  background-color: #ffffff;
+  border-radius: 0.8rem;
+  padding: 0.9rem;
+  flex: 1 1 220px;
+  max-width: 260px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.06);
+  transition: box-shadow 0.2s ease, transform 0.2s ease;
+}
+
+.club-card img {
+  border-radius: 0.7rem;
+  margin-bottom: 0.6rem;
+}
+
+.club-card h3 {
+  margin-top: 0;
+  margin-bottom: 0.4rem;
+}
+
+.club-card p {
+  font-size: 0.9rem;
+  margin-bottom: 0.5rem;
+}
+
+.club-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 14px rgba(0,0,0,0.14);
+}
+
+
+/* Text link for internal navigation */
+.text-link {
+  color: #1b5e2b;
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+
+.text-link:hover {
+  text-decoration: underline;
+}
+
+/* Muted list style for accessories or details */
+.list-muted {
+  font-size: 0.9rem;
+  color: #445144;
+}
+
+
+
+/* =========================================
+   Footer
+   ========================================= */
+
+.site-footer {
+  background-color: #0f3b1f;
+  color: #ffffff;
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.8rem;
+}
+
+/* =========================================
+   Responsive – Desktop Adjustments
+   ========================================= */
+
+@media (min-width: 768px) {
+  main {
+    max-width: 1200px;
+    margin: 0 auto 2.5rem;
+  }
+
+  .hero {
+    min-height: 480px;
+    padding: 5rem 3rem;
+  }
+
+  .hero-text h1 {
+    font-size: 2.2rem;
+  }
+
+  /* Better card spacing on desktop */
+  .card-grid {
+    justify-content: space-between;
+  }
+}
+
+/* Add image inside spec-card */
+.spec-card img {
+  width: 100%;
+  border-radius: 0.6rem;
+  margin-bottom: 0.6rem;
+  display: block;
+}
