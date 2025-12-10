@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Radial Weather & Happiness Change</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Optional CSS for layout and typography -->
+  <link rel="stylesheet" href="main.css">
+
+  <!-- D3 v7.6.1 – copy this file from the class framework -->
+  <script src="d3.min.js"></script>
+</head>
+<body>
+
+  <main class="page">
+    <h1 class="page-title">Radial Weather &amp; Happiness Change</h1>
+
+    <!-- Container for the SVG visualization -->
+    <div id="viz" class="viz-container"></div>
+
+    <section class="text-section">
+      <p>
+  <strong><a href="report.pdf" target="_blank">Click here to view the full project report (PDF)</a></strong>
+</p>
+
+      <h2>Research Question</h2>
+      <p>
+        How does weather condition relate to the difference between my happiness before and after each golf round?
+      </p>
+
+      <h2>Hypothesis</h2>
+      <p>
+        As the difference between happiness after and happiness before increases, emotional improvement becomes
+        more pronounced. In addition, sunny weather is likely associated with larger positive happiness changes,
+        while cloudy or rainy conditions may lead to smaller or more moderate shifts.
+      </p>
+
+      <h2>Data Collected</h2>
+      <p>
+        This term project tracks my personal golf rounds from September 14 to December 7, 2025.
+        For each round I recorded: date, start time, duration, course, weather, number of holes, score,
+        whether I walked or used a cart, and my self-rated happiness before and after the round
+        on a 1–10 scale.
+      </p>
+      <p>
+        For this draft visualization, the JSON file includes one record per round with the following properties:
+        <strong>date</strong>, <strong>course</strong>, <strong>weather</strong>,
+        <strong>happinessBefore</strong>, and <strong>happinessAfter</strong>.
+        The visualization focuses on the relationship between happiness change and weather type,
+        while the other recorded fields are kept for possible later drafts.
+      </p>
+
+      <h2>How the Visualization Works</h2>
+      <p>
+        Each spoke in the radial diagram represents one golf round. The spokes radiate out from a central
+        golf-ball icon. The inner red segment shows my happiness <em>before</em> playing, and the outer green
+        segment shows my happiness <em>after</em> playing. The distance from the center is on the same
+        1–10 happiness scale for all rounds. The colored circle at the end of each spoke shows the weather:
+        orange for sunny or partly sunny days, gray for cloudy or overcast days, and blue for rainy or drizzly days.
+        A legend on the right explains the colors and indicates that distance from the center represents
+        “Happiness (1–10 scale)”.
+      </p>
+
+      <h2>Patterns and Initial Conclusions</h2>
+      <p>
+        Overall, almost every round shows a positive happiness change. Most spokes have a green segment that is
+        2–3 units longer than the red base, which means my mood usually improves by about 2–3 points after golf.
+        There are a few extreme days with very large jumps (+4 to +6), and these tend to happen on sunny or
+        lightly rainy days. Cloudy rounds still improve my mood, but their spokes are usually shorter, with
+        increases of only +1 or +2.
+      </p>
+      <p>
+        Based on this draft, my hypothesis is partly supported: larger happiness changes often appear when the
+        weather is sunny or lightly rainy, while cloudy and overcast days are more likely to produce modest
+        improvements. At the same time, the radial layout also makes it clear that weather is not the only factor:
+        even on rainy days, there are several rounds where my happiness jumps by +3 or more, suggesting that
+        playing golf itself is a strong positive influence regardless of conditions.
+      </p>
+
+      <h2>Code Notes</h2>
+      <p>
+        The visualization is built with D3 v7 using techniques from class: an SVG canvas, simple configuration
+        variables, Array.map to process the JSON data, a custom classification function for weather types,
+        and basic trigonometry (sine and cosine) to convert radial angles into x/y positions.
+        No external frameworks are used.
+      </p>
+    </section>
+  </main>
+
+  <!-- Main script for the term project draft -->
+  <script src="main.js"></script>
+</body>
+</html>
